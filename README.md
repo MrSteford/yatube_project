@@ -5,5 +5,5 @@
 - Установите и активируйте виртуальное окружение командами:
  ``` python -m venv venv ``` 	и 	``` source venv/Scripts/activate ```
 - Установите зависимости из файла requirements.txt ``` pip install -r requirements.txt ``` 
-- В папке с файлом manage.py выполните команду: ``` python3 manage.py runserver ``` 
+- В папке с файлом manage.py выполните команду: ``` python manage.py runserver ``` 
 ### Авторы: Стёпа
