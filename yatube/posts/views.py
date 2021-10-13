@@ -5,7 +5,9 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('Главная БибоСтраница')
+    template = 'posts/index.html'
+    return render(request, template)
 
-def posts(request, slug):
-    return HttpResponse('Детали БибоСайта')
+def posts(request):
+    template = 'posts/group_list.html'
+    return render(request, template)
