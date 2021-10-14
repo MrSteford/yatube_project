@@ -12,7 +12,7 @@ def index(request):
     template = 'posts/index.html'
     return render(request, template, context)
 
-def posts(request, list):
+def posts(request, slug):
     title = 'Здесь будет информация о группах проекта Yatube'
     context = {
         'title' : title
