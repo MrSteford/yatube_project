@@ -5,9 +5,17 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
+    title = 'Это главная страница проекта Yatube'
+    context = {
+        'title' : title
+    }
     template = 'posts/index.html'
-    return render(request, template)
+    return render(request, template, context)
 
-def posts(request):
+def posts(request, list):
+    title = 'Здесь будет информация о группах проекта Yatube'
+    context = {
+        'title' : title
+    }
     template = 'posts/group_list.html'
-    return render(request, template)
+    return render(request, template, context)
