@@ -6,5 +6,5 @@ app_name = 'posts'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('group/<slug:slug>/', views.posts, name='group_posts')
+    path('group/<slug:slug>/', views.posts, name='group_list')
 ]
